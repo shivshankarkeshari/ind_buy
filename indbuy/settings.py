@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'indbuy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'self_project',
-        'USER': 'edpuser',
+        'NAME': 'ind_buy', #database_name
+        'USER': 'shiv_ind_buy',
         'PASSWORD': '1qazxsw2',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -136,3 +136,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
+
+
+

@@ -43,7 +43,7 @@ def data_view_details(request, msg):
             }
 
             return JsonResponse(output_dict, safe=False)
-        return JsonResponse({"Error": f"In any msg word-->{msg} doesn't exist"}, safe=False)
+        return JsonResponse({"Error": f"In any message word---> '{msg}' doesn't exist"}, safe=False)
 
 
 def data_view_details_msg(request, msg):

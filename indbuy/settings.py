@@ -26,7 +26,7 @@ SECRET_KEY = 'id-h7)(^*$wk6)_hbp0+kkfi%4+x#^b4xi6tg%004ybor(mf75'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ind-buying.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -89,7 +89,9 @@ DATABASES = {
     }
 }
 
+
 import dj_database_url
+
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)

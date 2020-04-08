@@ -19,7 +19,7 @@ class CuniqueData(models.Model):
     ibm_not_spam = models.DecimalField(max_digits=22, decimal_places=6, blank=True, null=True)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 
 
